@@ -7,7 +7,7 @@ var empty = undefined; // This is a undefined variable.
 
 console.log(nba + "type =" + typeof nba);
 console.log(age + "type =" + typeof age);
-console.log(isAProfessionalAthlete + "type =" + typeof isAProfessionalAthleteba);
+console.log(isAProfessionalAthlete + "type =" + typeof isAProfessionalAthlete);
 console.log(empty + "type =" + typeof empty);
 
 /* Objects - 
@@ -28,10 +28,12 @@ var person = { // The variable person is a object.
 };
 
 console.log(person);
+console.log(JSON.stringify(person));
 console.log(person.name);
 console.log(person.age);
-console.log(person.address)
+console.log(person.address);
 console.log(Object.values(person));
+console.log(Object.keys(person));
 
 //Arrays(lists)
 var friends = ["Jordan", "James", "Dovy", "Carlo", "Ebou", "Azza", "Matt"]; // a array of strings
@@ -70,8 +72,7 @@ console.log(division);
 console.log(multiplication);
 console.log(remainder);
 
-// Functions
-
+// Function without arguements
 function mathsAddition() {
   var numb1 = 10;
   var numb2 = 20;
@@ -80,3 +81,37 @@ function mathsAddition() {
 }
 
 console.log(mathsAddition());
+
+// Function with arguements
+function multiplyNumbers(numb1, numb2) {
+  var multipy = numb1 * numb2;
+  return multipy;
+}
+
+console.log(multiplyNumbers(150,160));
+
+// function with arguements stored in a variable
+
+function fullName(firstName, lastName) {
+  var name = firstName + " " + lastName;
+  return name;
+}
+
+var proAthlete = fullName("Lebron",'Janes');
+
+console.log(proAthlete);
+
+// Built in functions & methods
+
+//  Object methods
+console.log(Object.keys({name: 'Jay', age: 22, sport: "MMA"}));
+console.log(Object.values({name: 'Jay', age: 22, sport: "MMA"}));
+
+// String methods
+console.log('James'.toUpperCase());
+console.log('James'.toLowerCase());
+
+// booLean methods
+console.log('James'.endsWith("s"));
+console.log('James'.startsWith("j"));
+console.log('James'.startsWith("J"));
