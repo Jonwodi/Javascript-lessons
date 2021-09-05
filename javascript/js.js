@@ -91,7 +91,6 @@ function multiplyNumbers(numb1, numb2) {
 console.log(multiplyNumbers(150,160));
 
 // function with arguements stored in a variable
-
 function fullName(firstName, lastName) {
   var name = firstName + " " + lastName;
   return name;
@@ -115,3 +114,48 @@ console.log('James'.toLowerCase());
 console.log('James'.endsWith("s"));
 console.log('James'.startsWith("j"));
 console.log('James'.startsWith("J"));
+
+// For loops
+for (var x = 0; x < 10; x++) {
+  console.log(x);
+}
+
+for (var i = 0; i <= 10; i++) {
+  console.log(i);
+}
+
+/* var people = [
+{name: 'Jay', age: 20}, 
+{name: 'Mike', age: 21}
+];
+
+for (var y = 0; y <= people.length; y++) {
+  console.log(people[y].name);
+  console.log(people[y].age);
+  console.log('-------------');
+} */
+
+// While loops
+var thisNumber = 0;
+
+while(thisNumber < 7) {
+  console.log(thisNumber);
+  thisNumber += 1;
+}
+
+// --------------------------
+
+var secondNumber = 0;
+
+while(secondNumber < 7) {
+  console.log(secondNumber);
+  secondNumber += 5;
+}
+
+// do while loops
+var xyz = 0;
+
+do {
+xyz ++
+console.log(xyz);
+} while(xyz < 5)
